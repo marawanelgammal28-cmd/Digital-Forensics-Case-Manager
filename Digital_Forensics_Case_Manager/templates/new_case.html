@@ -1,0 +1,6 @@
+{% extends "base.html" %}{% block title %}New case{% endblock %}{% block content %}
+<a class="back" href="{{ url_for('index') }}">← Dashboard</a><section class="panel form-panel"><p class="eyebrow">CASE REGISTER</p><h1>Create investigation case</h1><p class="muted">Create a record before registering evidence or investigative notes.</p>
+<form method="post"><input type="hidden" name="_csrf_token" value="{{ csrf_token() }}">
+<label for="title">Case title <span>Required · 3–120 characters</span></label><input id="title" name="title" minlength="3" maxlength="120" required placeholder="e.g. DF-2026-001 — Suspicious workstation activity">
+<label for="description">Case description <span>Optional · maximum 2,000 characters</span></label><textarea id="description" name="description" maxlength="2000" rows="5" placeholder="Record the scope and initial context. Avoid unnecessary personal data."></textarea>
+<div class="form-actions"><a class="button secondary" href="{{ url_for('index') }}">Cancel</a><button class="button primary" type="submit">Create case</button></div></form></section>{% endblock %}

@@ -1,0 +1,9 @@
+Automated runtime test status: NOT RUN in the document-generation environment.
+Reason: Flask is not installed in that environment (ModuleNotFoundError: No module named 'flask').
+Static Python syntax compilation: PASS.
+
+To run the tests locally:
+  python -m pip install -r requirements.txt
+  python -m unittest discover -s tests -v
+
+Do not report tests as passed until the command completes successfully on your computer.

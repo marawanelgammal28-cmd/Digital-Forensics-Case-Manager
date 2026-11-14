@@ -1,0 +1,8 @@
+BEFORE SUBMISSION
+1. Install the project dependencies and run the application on your own computer.
+2. Run the automated tests: python -m unittest discover -s tests -v
+3. Save the actual test output in TEST_RESULTS.txt.
+4. Capture genuine screenshots of the dashboard, case detail, SHA-256 hash, validation rejection and persistence after restart.
+5. Insert the screenshots into the report where the figure placeholders appear.
+6. Verify your LinkedIn URL and all CV details.
+7. Be ready to explain that the app manages evidence records; it does not perform forensic acquisition or artefact analysis.
